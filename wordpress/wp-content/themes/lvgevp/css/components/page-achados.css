@@ -1,0 +1,19 @@
+.object:not(:last-of-type) {
+    margin-left: 1.5rem;
+}
+
+.object-info > .object-id {
+    font-weight: bold;
+}
+
+.object-info > .object-status {
+    color: #fff;
+}
+
+.object-info > .object-status.avaiable {
+    background: #009688;
+}
+
+.object-info > .object-status.claimed {
+    background: #F44336;
+}
