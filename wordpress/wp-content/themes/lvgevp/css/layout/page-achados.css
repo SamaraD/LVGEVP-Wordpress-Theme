@@ -1,10 +1,14 @@
+.object-search-form-container {
+    max-width: 20rem;
+}
+
 .object-list {
     max-width: 1000px;
     margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
-    .is-parent {
-        padding-left: 0;
+    .tile.is-ancestor {
+        margin: 0;
     }
 }
