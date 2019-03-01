@@ -1,0 +1,54 @@
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.swipe-wrap > div {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+/*
+    The lines below make swipe sliders's parents keep width 
+*/
+.tile.is-child.card.object {
+    width: 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .tile.is-child.card.object {
+        width: 100rem;
+    }
+}
+
+.swipe {
+    max-width: 100%;
+}
+
+.card-image > .slide-controls {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-image > .slide-controls > .btn {
+    display: flex;
+    height: 100%;
+}
+
+.card-image > .slide-controls > .left-btn {
+    float: left;
+}
+
+.card-image > .slide-controls > .right-btn {
+    float: right;
+}

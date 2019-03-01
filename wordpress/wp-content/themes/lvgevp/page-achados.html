@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/layout/page-achados.css">
     <link rel="stylesheet" href="css/components/page-achados.css">
+    <link rel="stylesheet" href="css/swipe/swipe-configuration.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="js/swipe/swipe.js"></script>
+    <script defer src="js/swipe/swipe-usage.js"></script>
 </head>
 <body>
     <section class="section">
@@ -30,9 +33,36 @@
             <div class="tile is-parent">
                 <article class="tile is-child card object">
                     <div class="card-image">
-                        <figure class="image is-16by9">
-                            <img src="img/photo-pack-october/october (1).jpg">
-                        </figure>
+                        <div class="swipe">
+                            <div class="swipe-wrap">
+                                <div>
+                                    <figure class="image is-16by9">
+                                        <img src="img/photo-pack-october/october (1).jpg">
+                                    </figure>
+                                </div>
+                                <div>
+                                    <figure class="image is-16by9">
+                                        <img src="img/photo-pack-october/october (1).jpg">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-controls">
+                            <div class="btn left-btn">
+                                <button>
+                                    <span class="icon">
+                                        <i class="fas fa-arrow-left"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="btn right-btn">
+                                <button>
+                                    <span class="icon">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-content">
                         <div class="content object-info">
