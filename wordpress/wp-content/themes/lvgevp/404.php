@@ -7,7 +7,6 @@ $jsFolderURL = $themeURL . '/js';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="<?= $cssFolderURL; ?>/layout/page-achados.css">
     <link rel="stylesheet" href="<?= $cssFolderURL; ?>/components/page-achados.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     <script defer src="<?= $jsFolderURL; ?>/tag-customization.min.js"></script>
 <!-- main-content -->
     <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">

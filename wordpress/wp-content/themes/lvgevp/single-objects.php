@@ -19,7 +19,7 @@ $jsFolderURL = $themeURL . '/js';
     </nav>
     <section class="section has-background-light margin-bottom">
         <div class="container">
-            <form action="" method="get">
+            <form action="achados" method="get">
                 <div class="field">
                     <div class="field-label is-normal has-text-centered">
                         <label for="search-query-field" class="label">Pesquisa por itens</label>
@@ -43,14 +43,8 @@ $jsFolderURL = $themeURL . '/js';
     <?php
     $objectSearchQueryArgs = array(
         'post_type' => 'objects',
-        'numberposts' => -1
+        'p' => get_the_ID()
     );
-
-    if (isset($_GET['search-query'])) {
-        $searchQueryTags = $_GET['search-query'];
-        $searchQueryTags = mb_ereg_replace('/ /', ',', $searchQueryTags);
-        $objectSearchQueryArgs['tag'] = $searchQueryTags;
-    }
 
     $objectSearchQuery = new WP_Query($objectSearchQueryArgs);
     if ($objectSearchQuery->have_posts()) {

@@ -1,3 +1,13 @@
+.navbar-brand,
+.navbar-brand > .navbar-item {
+    margin: auto;
+}
+
+.search-query-btn {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 .object:not(:last-of-type) {
     margin-left: 1.5rem;
 }
@@ -11,9 +21,26 @@
 }
 
 .object-info > .object-status.avaiable {
-    background: #009688;
+    background: #004D40;
 }
 
 .object-info > .object-status.claimed {
-    background: #F44336;
+    background: #B71C1C;
+}
+
+.object-description .tag {
+    color: #000000;
+}
+
+footer.footer {
+    margin-top: 1.5rem;
+}
+
+footer.footer > .content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.quote {
+    font-style: italic;
 }

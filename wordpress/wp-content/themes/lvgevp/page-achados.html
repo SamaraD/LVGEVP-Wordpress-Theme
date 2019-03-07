@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="has-navbar-fixed-top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/layout/page-achados.css">
     <link rel="stylesheet" href="css/components/page-achados.css">
-    <link rel="stylesheet" href="css/swipe/swipe-configuration.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script defer src="js/swipe/swipe.js"></script>
-    <script defer src="js/swipe/swipe-usage.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="section">
+    <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <h1 class="title is-4">A&P</h1>
+            </div>
+        </div>
+    </nav>
+    <section class="section has-background-light margin-bottom">
         <div class="container object-search-form-container">
             <form class="object-search">
                 <div class="field">
@@ -33,41 +37,14 @@
             <div class="tile is-parent">
                 <article class="tile is-child card object">
                     <div class="card-image">
-                        <div class="swipe">
-                            <div class="swipe-wrap">
-                                <div>
-                                    <figure class="image is-16by9">
-                                        <img src="img/photo-pack-october/october (1).jpg">
-                                    </figure>
-                                </div>
-                                <div>
-                                    <figure class="image is-16by9">
-                                        <img src="img/photo-pack-october/october (1).jpg">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-controls">
-                            <div class="btn left-btn">
-                                <button>
-                                    <span class="icon">
-                                        <i class="fas fa-arrow-left"></i>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="btn right-btn">
-                                <button>
-                                    <span class="icon">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
+                        <figure class="image is-16by9">
+                            <img src="img/photo-pack-october/october (1).jpg">
+                        </figure>
                     </div>
                     <div class="card-content">
                         <div class="content object-info">
-                            <span class="tag is-medium is-white object-id">#5273</span>
-                            <span class="tag is-normal object-status avaiable">Disponivel</span>
+                            <span class="tag is-medium is-white object-id">#1239</span>
+                            <span class="tag is-normal object-status avaiable">Disponível</span>
                         </div>
                         <div class="content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -110,7 +87,53 @@
                     </div>
                     <div class="card-content">
                         <div class="content object-info">
-                            <span class="tag is-medium is-white object-id">#4358</span>
+                            <span class="tag is-medium is-white object-id">#7894</span>
+                            <span class="tag is-normal object-status claimed">Reivindicado</span>
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <article class="tile is-child card object">
+                    <div class="card-image">
+                        <figure class="image is-16by9">
+                            <img src="img/photo-pack-october/october (4).jpg">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content object-info">
+                            <span class="tag is-medium is-white object-id">#1239</span>
+                            <span class="tag is-normal object-status avaiable">Disponível</span>
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child card object">
+                    <div class="card-image">
+                        <figure class="image is-16by9">
+                            <img src="img/photo-pack-october/october (5).jpg">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content object-info">
+                            <span class="tag is-medium is-white object-id">#5387</span>
                             <span class="tag is-normal object-status claimed">Reivindicado</span>
                         </div>
                         <div class="content">
@@ -125,5 +148,45 @@
             </div>
         </div>
     </section>
+    <footer class="footer has-background-white-ter">
+        <div class="content has-text-centered level">
+            <div class="tile is-vertical is-4">
+                <p>Grêmio Estudantil Valdemar dos Pássaros</p>
+                <p class="social-media-links">
+                    <a href="">
+                        <span class="icon is-medium">
+                            <i class="fab fa-lg fa-facebook-square"></i>
+                        </span>
+                    </a>
+                    <a href="">
+                        <span class="icon is-medium">
+                            <i class="fab fa-lg fa-instagram"></i>
+                        </span>
+                    </a>
+                    <a href="">
+                        <span class="icon is-medium">
+                            <i class="fas fa-lg fa-envelope"></i>
+                        </span>
+                    </a>
+                </p>
+                <p class="quote">
+                    "Grêmio <strong>forte</strong>; grêmio de <strong>luta</strong>!"
+                </p>
+            </div>
+            <br>
+            <div class="tile is-vertical is-8">
+                <p>
+                    <strong>GEVP Online</strong> foi desenvolvido coletiva e caprichosamente por
+                    <a href="">Lucas Vinicius</a>,
+                    <a href="">Matheus Henrique</a>,
+                    <a href="">Pedro Guilherme</a> e
+                    <a href="">Samara Danielle</a>.
+                </p>
+                <p>
+                    Powered by <a href="https://br.wordpress.org/">WordPress</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
